@@ -15,3 +15,11 @@ With the observer pattern, we can subscribe certain objects, the observers, to a
 - Pros: Using the observer pattern is a great way to enforce separation of concerns and the single responsibility principle. The observer objects aren’t tightly coupled to the observable object, and can be (de)coupled at any time. The observable object is responsible for monitoring the events, while the observers simply handle the received data.
 
 - Cons: If an observer becomes too complex, it may cause performance issues when notifying all subscribers.
+
+### Proxy pattern
+
+With a Proxy object, we get more control over the interactions with certain objects. A proxy object can determine the behavior whenever we’re interacting with the object, for example when we’re getting a value, or setting a value.
+
+- Pros: Proxies are a powerful way to add control over the behavior of an object. A proxy can have various use-cases: it can help with validation, formatting, notifications, or debugging.
+
+- Cons: Overusing the Proxy object or performing heavy operations on each handler method invocation can easily affect the performance of your application negatively. It’s best to not use proxies for performance-critical code.
