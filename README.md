@@ -23,3 +23,11 @@ With a Proxy object, we get more control over the interactions with certain obje
 - Pros: Proxies are a powerful way to add control over the behavior of an object. A proxy can have various use-cases: it can help with validation, formatting, notifications, or debugging.
 
 - Cons: Overusing the Proxy object or performing heavy operations on each handler method invocation can easily affect the performance of your application negatively. It’s best to not use proxies for performance-critical code.
+
+### Singleton pattern
+
+Singletons are classes which can be instantiated once, and can be accessed globally. This single instance can be shared throughout our application, which makes Singletons great for managing global state in an application.
+
+- Pros: Restricting the instantiation to just one instance could potentially save a lot of memory space. Instead of having to set up memory for a new instance each time, we only have to set up memory for that one instance, which is referenced throughout the application
+
+- Cons: Since we can directly create objects in JavaScript, we can simply use a regular object to achieve the exact same result
